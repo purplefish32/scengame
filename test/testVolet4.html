@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Include Sidr  -->
+
+<link rel="stylesheet" href="sidr/stylesheets/jquery.sidr.dark.css">
+<script src="jquery.js"></script>
+<script src="sidr/jquery.sidr.min.js"></script>
+
+</head>
+<body>
+
+
+<a id="left-menu" href="#left-menu">Left Menu</a>
+<a id="right-menu" href="#right-menu">Right Menu</a>
+
+
+<div id="menu-gauche">
+<p>gaaaauuche</p>
+</div>
+
+<div id="menu-droite">
+<p>droooiiiite</p>
+</div>
+
+
+<script>
+$(document).ready(function() {
+$('#left-menu').sidr({
+name: 'menu-gauche',
+side: 'left',
+source: '#menu-gauche'
+});
+$('#right-menu').sidr({
+name: 'menu-droite',
+side: 'right',
+source: '#menu-droite'
+});
+});
+</script>
+
+</body>
+</html>
